@@ -32,10 +32,13 @@ public class LocProviderListActivity extends AppCompatActivity implements View.O
         locProviders = locMgr.getAllProviders();
 
         String s = "";
-        for(int i = 0; i < locProviders.size(); i++) {
-            s += "Loc.Provider: " + locProviders.get(i) + "\n"
-                    + "Status: " + locMgr.isProviderEnabled(locProviders.get(i)) + "\n\n";
-        }
+
+        int [] array = new int [locProviders.size()];
+            for(int result : array) {
+                s += "Loc.Provider: " + locProviders.get(result) + "\n"
+                        + "Status: " + locMgr.isProviderEnabled(locProviders.get(result)) + "\n\n";
+            }
+
         mTextView.setText(s);
 
     }
