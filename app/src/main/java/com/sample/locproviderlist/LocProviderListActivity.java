@@ -22,6 +22,7 @@ public class LocProviderListActivity extends AppCompatActivity implements View.O
         setContentView(R.layout.activity_main);
 
         mTextView = findViewById(R.id.txtOutput);
+        mButton = findViewById(R.id.button);
         mButton.setOnClickListener(this);
     }
 
