@@ -29,8 +29,6 @@ public class LocProviderListActivity extends AppCompatActivity implements View.O
     @Override
     public void onClick(View v) {
         locMgr = (LocationManager) getSystemService(LOCATION_SERVICE);
-        mButton = findViewById(R.id.button);
-
         locProviders = locMgr.getAllProviders();
 
         String s = "";
